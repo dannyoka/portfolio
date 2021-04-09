@@ -1,7 +1,9 @@
 <template>
   <div>
     <hero-box></hero-box>
+    <about-me></about-me>
     <the-cards></the-cards>
+    <the-carousel></the-carousel>
     <q-dialog v-model="welcomeDialog">
       <q-card style="width: 50%">
         <q-card-section>
@@ -26,7 +28,9 @@
 
 <script>
 import TheCards from "../components/TheCards";
+import AboutMe from "../components/AboutMe";
 import HeroBox from "../components/HeroBox";
+import TheCarousel from "../components/TheCarousel";
 export default {
   name: "PageIndex",
   mounted() {
@@ -34,7 +38,9 @@ export default {
   },
   components: {
     TheCards,
-    HeroBox
+    HeroBox,
+    AboutMe,
+    TheCarousel
   },
   data() {
     return {
